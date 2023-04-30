@@ -22,7 +22,7 @@ title: Linear Algebra - Foundations to Frontiers - Lecture Notes
 email: contact@refactorx.com
 description: >- # this means to ignore newlines until "baseurl:"
   Lecture notes for "Linear Algebra - Foundations to Frontiers" course by UT Austin (https://www.edx.org/course/linear-algebra-foundations-to-frontiers)
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/ut-linalg-1" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kirilchi
 github_username:  kiril-chilingarashvili
