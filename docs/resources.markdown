@@ -3,4 +3,4 @@ layout: page
 title: Resources
 ---
 
-## Week 1 - ??
+## [Book](pdf/LAFF-1.pdf)
