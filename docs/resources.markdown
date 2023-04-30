@@ -3,4 +3,6 @@ layout: page
 title: Resources
 ---
 
-## [Book](pdf/LAFF-1.pdf)
+## Book
+
+[Book](pdf/LAFF-1.pdf)
