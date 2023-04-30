@@ -5,4 +5,4 @@ title: Resources
 
 ## Book
 
-[Book](pdf/LAFF-1.pdf)
+[Book](https://www.cs.utexas.edu/users/flame/laff/laff/Notes_edX.pdf)
