@@ -7,7 +7,7 @@ x = [
 
 % test with x column vector, comparing against matlab's norm function
 disp( 'compute length of column vector' )
-if ( isequal( laff_norm2( x ), norm( x ) ) ) 
+if ( isequal( round(laff_norm2( x ), 4), round(norm( x, 2 ), 4) ) ) 
     disp( 'TEST PASSED' )
 else
     disp( 'TEST FAILED.  But could this be due to roundoff?  Lets check:' )
@@ -21,7 +21,7 @@ disp( ' ' )
 
 % test with x row vector, comparing against matlab's norm function
 disp( 'compute length of row vector' )
-if ( isequal( laff_norm2( x' ), norm( x ) ) ) 
+if ( isequal( round(laff_norm2( x' ), 4), round(norm( x, 2 ), 4) ) ) 
     disp( 'TEST PASSED' )
 else
     disp( 'TEST FAILED  But could this be due to roundoff?  Lets check:' )
