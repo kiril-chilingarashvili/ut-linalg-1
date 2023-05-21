@@ -1,6 +1,5 @@
 function [ x_out ] = laff_scal(alpha, x)
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+
     [ m_x, n_x ] = size( x );
     
     if ~isvector( x )
@@ -14,7 +13,7 @@ function [ x_out ] = laff_scal(alpha, x)
         x_out = 'FAILED';
         return
     end
-    
+
     x_out = zeros(m_x, n_x );
 
     for i = 1 : m_x   
