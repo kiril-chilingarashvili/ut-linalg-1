@@ -14,6 +14,18 @@ function [ y_out ] = laff_copy( x, y )
 [ m_x, n_x ] = size( x );
 [ m_y, n_y ] = size( y );
 
+if ~isvector( x ) | ~isvector( y )
+    disp( 'copy failed' );
+    y_out = 'FAILED';
+    return
+end
+
+if ~( m_x * n_x == m_y * n_y )
+    disp( 'copy failed' );
+    y_out = 'FAILED';
+    return
+end
+
 % Make sure x and y are (row or column) vectors of equal length
 if ( m_x ~= 1 & n_x ~= 1 ) | ( m_y ~= 1 & n_y ~= 1 )
     y_out = 'FAILED';
