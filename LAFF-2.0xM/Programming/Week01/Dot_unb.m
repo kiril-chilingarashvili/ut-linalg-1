@@ -1,5 +1,5 @@
-function [ y_out ] = Axpy_unb( alpha, x, y )
-
+function [ alpha_out ] = Dot_unb( alpha, x, y )
+  alpha = 0.0;
   [ xT, ...
     xB ] = FLA_Part_2x1( x, ...
                          0, 'FLA_TOP' );
@@ -24,7 +24,7 @@ function [ y_out ] = Axpy_unb( alpha, x, y )
 
     %------------------------------------------------------------%
 
-    psi1 = alpha * chi1 + psi1;
+    alpha = alpha + chi1 * psi1;
 
     %------------------------------------------------------------%
 
@@ -42,7 +42,7 @@ function [ y_out ] = Axpy_unb( alpha, x, y )
 
   end
 
-  y_out = [ yT
-            yB ];
+  alpha_out = alpha;
+
 
 return
